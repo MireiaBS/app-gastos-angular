@@ -1,0 +1,10 @@
+.nav-user-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+}
