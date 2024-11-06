@@ -1,0 +1,26 @@
+.nav-user-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.nav-user-class :first-child {
+  margin-right: 8px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+nav {
+  background-color: rgb(33, 162, 179);
+  box-shadow: 0 1px 8px -0px rgba(105, 105, 105, 0.5);
+}
+
+.text-nav {
+  color:rgb(241, 249, 252);
+}
