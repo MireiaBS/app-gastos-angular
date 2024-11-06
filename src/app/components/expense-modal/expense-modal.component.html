@@ -1,6 +1,13 @@
 <div class="modal">
   <div class="modal-content">
     <h3>Añadir Gasto</h3>
+    <select name="category-selector" id="category-selector">
+      <!-- Aqui NgFor para sacar todas las categorias-->
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+
+    </select>
     <input type="number" name="expense"> €
     <span class="close" (click)="closeModal()">Cancelar</span>
   </div>
