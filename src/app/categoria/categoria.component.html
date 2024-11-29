@@ -1,0 +1,48 @@
+<div class="body inicio">
+  <div class="nav">
+    <div class="navSuperior">
+      <span class="txtBlanco">Mireia</span>
+      <a href="/categorias" class="txtBlanco link">Cancelar</a>
+    </div>
+
+    <form class="form" (ngSubmit)="frmAgregarCategoria_onSubmit()">
+      <label class="form-label" for="nombre">Nombre:</label>
+      <input
+        class="form-label"
+        type="text"
+        id="nombre"
+        [(ngModel)]="categoria.nombre"
+        name="nombre"
+        required
+      />
+
+      <label class="form-label" for="color">Color:</label>
+      <select
+        class="color"
+        id="color"
+        [(ngModel)]="categoria.color"
+        name="color"
+        required
+      >
+        <option
+          class="form-options"
+          *ngFor="let color of colores"
+          [ngValue]="color.value"
+          [ngStyle]="{ 'background-color': color.value }"
+        >
+          {{ color.name }}
+        </option>
+      </select>
+      <div class="form-btns">
+        <button
+          class="button eliminar"
+          (click)="btnEliminar_onClick()"
+          *ngIf="categoria.nombre"
+        >
+          Eliminar
+        </button>
+        <button class="button aceptar" type="submit">Aceptar</button>
+      </div>
+    </form>
+  </div>
+</div>

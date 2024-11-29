@@ -1,0 +1,10 @@
+.color {
+  display: block;
+  padding: 5px;
+  width: 200px;
+}
+
+.color .color-option {
+  padding: 10px;
+  color: white; 
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+      }
+
+      .tabla.tabla-importes .col-id {
+        width: 100px;
+        padding: 7px;
+      }
+
+      .tabla.tabla-importes .col-nombre {
+        width: 100%;
+        padding: 7px;
+      }
+      .contenedor-colores {
+        display: flex;
+        flex-direction: column;
+      }
+      .color-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .color-title {
+        width: 100px;
+        margin: 0;
+        font-size: smaller;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>TÍTULOS</h1>
+    <div class="titulo1">Titulo 1</div>
+    <div class="titulo2">Titulo 2</div>
+    <div class="titulo3">Titulo 3</div>
+
+    <h1>COLORES</h1>
+    <div class="color-group">
+      <div class="contenedor-colores">
+        <p class="color-title">Color primario</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--colorPrimario);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Color secundario</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--colorSecundario);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Blanco 0</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--blanco0);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Blanco 1</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--blanco1);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Gris 1</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--gris1);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Gris 2</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--gris2);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Gris 3</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--gris3);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Azul Categoria</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--azulCategoria);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Rojo Categoria</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--rojoCategoria);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Verde Categoria</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--verdeCategoria);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Lila Categoria</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--lilaCategoria);
+          "
+        ></p>
+      </div>
+      <div class="contenedor-colores">
+        <p class="color-title">Naranja Categoria</p>
+        <p
+          style="
+            margin: 0;
+            width: 100px;
+            height: 100px;
+            background-color: var(--naranjaCategoria);
+          "
+        ></p>
+      </div>
+    </div>
+
+    <h1>CONTROLES</h1>
+
+    <h2>Card</h2>
+
+    <h3>Modelo 1</h3>
+    <div class="card card-div">
+      <span class="card-title">Alimentación</span>
+      <span class="card-import"> 56,45€</span>
+    </div>
+
+    <h3>Modelo 2</h3>
+    <div class="card2" style="border: 1px solid var(--lilaCategoria)">
+      <span class="card2-title" style="color: var(--lilaCategoria)">
+        Alimentación</span
+      >
+      <span class="card2-description">Descripción</span>
+      <span class="card2-import">23,44€</span>
+    </div>
+
+    <h2>Lista</h2>
+
+    <h3>Modelo 1</h3>
+    <div class="lista">
+      <div
+        class="card card-div"
+        style="background-color: var(--verdeCategoria)"
+      >
+        <span class="card-title">Alimentación</span>
+        <span class="card-import">44,87€</span>
+      </div>
+      <div class="card card-div" style="background-color: var(--rojoCategoria)">
+        <span class="card-title">Gasolina</span>
+        <span class="card-import">56,45€</span>
+      </div>
+      <div class="card card-div" style="background-color: var(--lilaCategoria)">
+        <span class="card-title">Tabaco</span>
+        <span class="card-import">5,45€</span>
+      </div>
+      <div class="card card-div" style="background-color: var(--azulCategoria)">
+        <span class="card-title">Otros</span>
+        <span class="card-import">5,45€</span>
+      </div>
+      <div
+        class="card card-div"
+        style="background-color: var(--naranjaCategoria)"
+      >
+        <span class="card-title">Viaje</span>
+        <span class="card-import">335,45€</span>
+      </div>
+    </div>
+
+    <h3>Modelo 2</h3>
+    <div class="lista">
+      <div class="card2" style="border: 1px solid var(--rojoCategoria)">
+        <span class="card2-title" style="color: var(--rojoCategoria)">
+          Alimentación</span
+        >
+        <span class="card2-description">Descripción</span>
+        <span class="card2-import">23,44€</span>
+      </div>
+      <div class="card2" style="border: 1px solid var(--lilaCategoria)">
+        <span class="card2-title" style="color: var(--lilaCategoria)">
+          Alimentación</span
+        >
+        <span class="card2-description">Descripción</span>
+        <span class="card2-import">23,44€</span>
+      </div>
+      <div class="card2" style="border: 1px solid var(--naranjaCategoria)">
+        <span class="card2-title" style="color: var(--naranjaCategoria)">
+          Alimentación</span
+        >
+        <span class="card2-description">Descripción</span>
+        <span class="card2-import">23,44€</span>
+      </div>
+      <div class="card2" style="border: 1px solid var(--azulCategoria)">
+        <span class="card2-title" style="color: var(--azulCategoria)">
+          Alimentación</span
+        >
+        <span class="card2-description">Descripción</span>
+        <span class="card2-import">23,44€</span>
+      </div>
+    </div>
+
+    <h2>Tablas</h2>
+
+    <div class="tabla tabla-importes">
+      <div class="header">
+        <div class="row">
+          <div class="col col-id">ID</div>
+          <div class="col col-nombre">Nombre</div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+        <div class="row">
+          <div class="col col-id">1</div>
+          <div class="col col-nombre">Juan</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Menu</h2>
+    <div class="menu">
+        <ul class="menu-ul">
+            <li class="menu-li"><a href="#">Ver detalle</a></li>
+            <li class="menu-li">
+                <a href="#">Opciones</a>
+                <ul class="submenu">
+                    <li><a href="#">Editar</a></li>
+                    <li><a href="#">Borrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--  menu, dialogs (ultimo)-->
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<div class="body inicio">
+
+  <div class="nav">
+    <div class="navSuperior">
+      <span class="txtBlanco" >Mireia</span>
+      <div class="div-fecha">
+      <span class="txtBlanco">Fecha seleccionada</span>
+      <input type="date" name="fecha" id="fechaInput" #fechaInput
+      (change)="inputFechaSeleccionada_onChange()">
+      </div>
+
+    </div>
+
+    <div class="vistas">
+      <span class="btn hoy">Hoy</span>
+      <span class="btn Semana">Semana</span>
+      <span class="btn Mes">Mes</span>
+    </div>
+
+  </div>
+
+  <div class="menuBotones">
+    <a href="/categorias" class="boton link">Categorías</a>
+    <a href="/gasto" class="boton link">Añadir Gasto</a>
+  </div>
+
+  <span class="fechaActual">{{fechaFormateada}}</span>
+
+  <div class="divImporte">
+    <a class="flecha" >
+      <img class="flecha center" src="flecha-izquierda.png" alt="flecha anterior" (click)="btnDiaAnterior_onClick()">
+    </a>
+    <span class="importeTotal">{{sumarImportes() | number:'1.2-2' }} €</span>
+    <a  class="flecha">
+      <img class="flecha center" src="flecha-derecha.png" alt="flecha siguiente" (click)="btnDiaPosterior_onClick()">
+    </a>
+  </div>
+
+  <div class="lista gastos">
+    <div class="card card-importe"
+    *ngFor="let gasto of gastos"
+    [style.background-color]="obtenerCategoriaById(gasto.categoriaId)?.color"
+    (click)="itemGasto_onClick(gasto)"
+    >
+      <span class="card-title">{{gasto.descripcion}}</span>
+      <span class="card-import" >{{ gasto.importe | number:'1.2-2' }} €</span>
+    </div>
+  </div>
+
+
+
+</div>
