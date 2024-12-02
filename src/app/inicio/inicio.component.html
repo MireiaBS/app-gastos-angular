@@ -12,9 +12,9 @@
     </div>
 
     <div class="vistas">
-      <span class="btn hoy">Hoy</span>
-      <span class="btn Semana">Semana</span>
-      <span class="btn Mes">Mes</span>
+      <span class="btn hoy" (click)='btnMostrarVistaHoy_onClick()'>Hoy</span>
+      <span class="btn Semana" (click)='btnMostrarVistaSemana_onClick()'>Semana</span>
+      <span class="btn Mes" (click)='btnMostrarVistaMes_onClick()'>Mes</span>
     </div>
 
   </div>
@@ -43,7 +43,7 @@
     (click)="itemGasto_onClick(gasto)"
     >
       <span class="card-title">{{gasto.descripcion}}</span>
-      <span class="card-import" >{{ gasto.importe | number:'1.2-2' }} €</span>
+      <span class="card-import">{{ gasto.importe | number:'1.2-2' }} €</span>
     </div>
   </div>
 
