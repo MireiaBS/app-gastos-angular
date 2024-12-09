@@ -1,0 +1,338 @@
+:root {
+  --colorPrimario: rgb(23, 120, 177);
+  --colorSecundario: rgb(180, 223, 240);
+  --blanco0:rgb(241, 243, 243);
+  --blanco1:rgb(238, 238, 238);
+  --gris1: rgba(210, 215, 216, 0.418);
+  --gris2: rgb(136, 137, 138);
+  --gris3: rgb(51, 51, 51);
+  --verdeCategoria: rgb(71, 173, 62);
+  --azulCategoria: rgb(64, 146, 194);
+  --rojoCategoria: rgb(145, 46, 46);
+  --lilaCategoria: rgb(119, 53, 145);
+  --naranjaCategoria: rgb(202, 141, 29);
+}
+
+
+body {
+  margin: 0px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(238, 238, 238);
+
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Titulos */
+
+
+.titulo1 {
+  font-size: 150%;
+}
+
+.titulo2 {
+  font-size: 125%;
+}
+
+.titulo3 {
+  font-size: 100%;
+}
+
+/* TABLA */
+
+.tabla {
+  width: 100%;
+  border: 1px solid var(--gris2);
+}
+
+.tabla .header{
+  text-align: center;
+  font-weight: 900;
+}
+.tabla .body{
+  width: 100%;
+}
+
+.tabla .row {
+  width: 100%;
+  display: flex;
+  background-color: var(--gris1);
+  border-bottom: 1px solid var(--gris2);
+
+}
+
+.tabla .row:last-child{
+  border-bottom: none;
+}
+
+.tabla .header .col{
+  background-color: var(--gris2);
+}
+
+/* MENU */
+
+.menu {
+  margin-bottom: 100px;
+}
+
+.menu .menu-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color:var(--blanco1);
+}
+
+.menu .menu-ul .menu-li {
+  position: relative;
+  display: inline-block;
+}
+
+.menu .menu-ul .menu-li a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--gris3);
+  text-decoration: none;
+
+  background-color: var(--blanco1);
+}
+
+.menu .menu-ul .menu-li a:hover {
+  background-color: var(--gris3);
+  color:var(--blanco1)
+}
+
+.menu ul .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+
+}
+
+.menu ul .submenu li {
+  display: block;
+}
+
+.menu ul li:hover .submenu {
+  display: block;
+}
+
+
+/* helpers */
+.txtBlanco {
+  color: var(--blanco0);
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+.nueva-categoria {
+  color:var(--colorPrimario);
+}
+
+
+/* Nav */
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navSuperior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100;
+  padding: 20px;
+  background-color: var(--colorPrimario);
+  align-items: center;
+
+}
+
+.div-fecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vistas {
+
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: var(--colorSecundario);
+
+}
+
+.menuBotones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.boton {
+
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.062);
+  padding: 8px;
+  color: inherit;
+}
+
+/* FECHA / IMPORTE  */
+
+
+
+.divImporte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
+.fechaActual {
+  text-align: center;
+  font-size: 10px;
+  width: 80%;
+}
+
+.importeTotal {
+  margin: 0 10px 0 10px;
+  font-size: 45px;
+  align-content: center;
+  line-height: 70px;
+}
+
+.flecha {
+  width: 20px;
+}
+
+
+/*LISTA*/
+.lista {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/*Card*/
+
+.card {
+  width: 85%;
+  margin: 0 10px 8px 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  /*background-color: var(--colorPrimario) ;*/
+  justify-content: space-between;
+  border-radius: 4px;
+  box-shadow: 1px 2px 3px var(--gris3);
+  align-items: center;
+}
+
+.card .card-title {
+  color: var(--blanco0);
+  font-size: 20px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.63);
+}
+
+.card .card-import {
+  color: var(--blanco0);
+  font-size: 20px;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.63);
+}
+
+.card.card-div {
+  justify-content: space-between;
+}
+
+.card2 {
+  margin: 0 10px 10px 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px var(--gris3);
+}
+
+.card2 .card2-title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.card2 .card2-description {
+  color: var(--gris2);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.card2 .card2-import {
+  color: var(--gris3);
+  font-size: 25px;
+}
+
+/* FORM */
+
+.form {
+  display:flex;
+  flex-direction: column;
+  margin:15px;
+}
+
+.form .form-label {
+  margin-bottom: 10px;
+}
+
+.btn.btn-form {
+  margin-top : 10px;
+}
+
+.form-btns {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  color:var(--blanco0);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.button.aceptar {
+  background-color: var(--colorPrimario);
+}
+
+.button.eliminar {
+  background-color: brown;
+}
+
+.form-options {
+  color:var(--blanco0);
+  margin:5px;
+}

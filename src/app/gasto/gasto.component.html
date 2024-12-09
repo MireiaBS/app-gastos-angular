@@ -1,0 +1,29 @@
+<div class="body inicio">
+
+  <div class="nav">
+    <div class="navSuperior">
+      <span class="txtBlanco">Mireia</span>
+      <a href='#' class="txtBlanco link">Volver</a>
+    </div>
+
+    <form class='form' (ngSubmit)="frmAgregarGasto_onSubmit()">
+
+      <label class="form-label" for="nombre">Gasto:</label>
+      <input class="form-label" type="text" id="descripcion" [(ngModel)]="gasto.descripcion" name="descripcion" required>
+      <label class="form-label" for="importe">Importe:</label>
+      <input class="form-label" type="number" id="importeGasto" [(ngModel)]="gasto.importe" name="importe" required>
+      <label class="form-label" for="categoria">Categoría: </label>
+      <select class="form-label" id="lstCategorias" [(ngModel)]="gasto.categoriaId" name="lstCategorias" required>
+        <option class="form-options" [style.background-color]="categoria.color" *ngFor="let categoria of categorias" [value]="categoria.id">{{categoria.nombre}}</option>
+      </select>
+      <label class="form-label" for="categoria">Fecha: </label>
+      <input class="form-label" type="date" id="fechaGasto" [(ngModel)]="gasto.fecha" name="fecha" required>
+      <div class="form-btns">
+        <button class="button eliminar" *ngIf="gasto.id!" (click)="btnEliminar_onClick()">Borrar</button>
+        <button class="button aceptar "button type="submit">   Aceptar</button>
+      </div>
+    </form>
+
+
+
+  </div>

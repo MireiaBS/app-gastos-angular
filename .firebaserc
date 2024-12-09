@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "app-gastos": "gastos-app-pro",
+    "desarrollo": "app-gastos-des"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,0 +1,24 @@
+<div class="body inicio">
+  <div class="nav">
+    <div class="navSuperior">
+      <span class="txtBlanco">Mireia</span>
+      <a href="#" class="txtBlanco link">Volver</a>
+    </div>
+  </div>
+  <div class="lista cards">
+    <div
+      class="card"
+      *ngFor="let categoria of categorias"
+      [style.background-color]="categoria.color"
+      (click)="itemCategoria_onClick(categoria)"
+    >
+      <span class="card-title">{{ categoria.nombre }}</span>
+
+      <a href="#" class="center">
+        <img class="flecha" src="edit2.png" alt="Editar" />
+      </a>
+    </div>
+
+    <a class="nueva-categoria" href="/categoria"> Añadir nueva categoría</a>
+  </div>
+</div>
