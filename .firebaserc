@@ -1,7 +1,8 @@
 {
   "projects": {
-    "app-gastos": "gastos-app-pro",
-    "desarrollo": "app-gastos-des"
+    "dev": "app-gastos-des",
+    "prod": "gastos-app-pro",
+    "default": "gastos-app-pro"
   },
   "targets": {},
   "etags": {}
